@@ -1,0 +1,82 @@
+.card-hadiah {
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    transition: var(--transition);
+}
+
+.card-hadiah-hover:hover {
+    transform: scale(0.99);
+}
+
+.card-hadiah .img-medali {
+    position: absolute;
+    right: -33px;
+    width: 262px;
+    top: -140px;
+}
+
+.card-result {
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    transition: var(--transition);
+}
+
+.gender-text {
+    font-size: 32px;
+}
+
+.color-11 {
+    color: #fa0;
+}
+
+.color-12 {
+    color: #e02020;
+}
+
+.navbar-left .navbar-brand svg, .navbar-left .navbar-brand img {
+    max-width: 110px;
+    min-width: 110px;
+}
+
+h2 {
+    font-size: 60px!important;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.gap-hadiah {
+    gap: 6px;
+}
+
+.gap-hadiah img {
+    width: 60px;
+}
+
+.card-hadiah .d-flex {
+    margin-bottom: 0.4rem;
+}
+
+.card-result .d-flex {
+    margin-bottom: 0.4rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mb-2 {
+    margin-left: 0.5rem !important;
+  }

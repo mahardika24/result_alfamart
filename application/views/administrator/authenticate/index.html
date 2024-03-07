@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/gambar/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Kemala Run 2024</title>
+</head>
+<body class="overflow-hidden">
+
+    <section class="py-20 w-full bg-[url('./assets/gambar/bg.png')] bg-no-repeat bg-center bg-cover relative personal-wrapper overflow-hidden">
+        <div style="height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <!-- Form Login -->
+            <div class="bg-white p-8 rounded-lg z-20 border border-slate-200 shadow-lg w-full max-w-md">
+                <div class="mb-6 justify-content-start">
+                    <img src="assets/gambar/logo_alfamartrun (1).png" alt="Logo" class="h-8">
+                </div>
+            
+                <h2 class="text-2xl text-center text-gray-700 font-weight-bold">Login</h2>
+                <p class="text-xs text-center mx-auto w-full sm-w-2/3 text-gray-400 mb-10">Silahkan login menggunakan username dan password anda</p>
+                <form>
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-weight-bold text-gray-600">Username</label>
+                        <input type="text" id="username" name="username" class="mt-1 p-2 w-full border focus-outline-[#eb2128ff] border-slate-300 rounded-md">
+                    </div>
+            
+                    <div class="mb-4">
+                        <label for="password" class="block text-sm font-weight-bold text-gray-600">Password</label>
+                        <div class="relative">
+                            <input type="password" id="password" name="password" class="mt-1 p-2 w-full border focus-outline-[#eb2128ff] border-slate-300 rounded-md pr-10">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-200 cursor-pointer" onclick="togglePasswordVisibility()">
+                                <img src="assets/icons/eye-outline.svg" alt="Toggle Password Visibility" class="h-4 w-4" id="togglePasswordIcon">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="w-full bg-[#eb2128ff] cursor-pointer text-white p-2 rounded-md hover-bg-[#bf151bff]">Login</button>
+                </form>
+            </div>
+            <!-- End Form Login -->
+    
+        </div>
+    </section>
+    
+</body>
+<script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var toggleIcon = document.getElementById("togglePasswordIcon");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.src = "assets/icons/eye-off-outline.svg";
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.src = "assets/icons/eye-outline.svg";
+        }
+    }
+</script>
+</html>
